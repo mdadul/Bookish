@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKISH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <!-- favicon -->
+    <link rel="icon" href="img/logo-black.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+
+        <div class="container">
+        <nav>
+                <div class="logo">
+                    <img src="img/logo.png" alt="bookish-logo" width="64px" class="img-thumbnail">
+                </div>
+                <div class="nav-item d-lg-block d-none">
+                    <a href="#">Home</a>
+                    <a href="#product">Product</a>
+                    <a href="#review">Review</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>   
+                <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="fas fa-grip-lines"></i></button>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small" id="menu">
+                    <a href="#">Home</a>
+                    <a href="#product">Product</a>
+                    <a href="#review">Review</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                </div>  
+        </nav>
+    </div>
+    </header>
+    <main>
+        <section id="home">
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner slide1">
+                  <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row hero">
+                            <div class="col-md-6 ">
+                                <div class="title ">
+                                    <h1>Get Your New</h1>
+                                    <h1>Book <span class="title-color">Collections</span> </h1>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="description">
+                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus aliquid minus doloremque nemo, iure natus illum! Exercitationem voluptatibus architecto cupiditate, recusandae repellat, placeat, facere pariatur illo ut iure reprehenderit ipsam?</p>
+                                </div>
+                                <button class="btn btn-warning">Explore More <i class="fas fa-cart-plus"></i></button>
+                            </div>
+                            <div class="col-md-6 img">
+                                <img src="img/hero-img1.jpg" alt="product" width="300px">
+                            </div>
+                        </div>
+                    </div>
+                   
+                  </div>
+                  <div class="carousel-item slide2">
+                    <div class="container">
+                        <div class="row hero">
+                            <div class="col-md-6 ">
+                                <div class="title">
+                                    <h1>There is no friend </h1>
+                                    <h1>as loyal as  <span class="title-color">a BOOK</span> </h1>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="description">
+                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus aliquid minus doloremque nemo, iure natus illum! Exercitationem voluptatibus architecto cupiditate, recusandae repellat, placeat, facere pariatur illo ut iure reprehenderit ipsam?</p>
+                                </div>
+                                <button class="btn btn-warning">Explore More <i class="fas fa-cart-plus"></i></button>
+                            </div>
+                            <div class="col-md-6 img">
+                                <img src="img/hero-img2.jpg" alt="product" width="300px">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item slide3">
+                    <div class="container">
+                        <div class="row hero">
+                            <div class="col-md-6 ">
+                                <div class="title">
+                                    <h1>So many books, </h1>
+                                    <h1>so  <span class="title-color">little time</span> </h1>
+                                    <p class="line"></p>
+                                </div>
+                                <div class="description">
+                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus aliquid minus doloremque nemo, iure natus illum! Exercitationem voluptatibus architecto cupiditate, recusandae repellat, placeat, facere pariatur illo ut iure reprehenderit ipsam?</p>
+                                </div>
+                                <button class="btn btn-warning">Explore More <i class="fas fa-cart-plus"></i></button>
+                            </div>
+                            <div class="col-md-6 img">
+                                <img src="img/hero-img3.jpg" alt="product" width="300px" class="img-fluid img-thumbnail">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <!-- Product Section -->
+        <section id="product">
+            <h1>New <span class="title-color1">BOOK</span></h1>
+            <div class="container">
+                <div class="row">
+                    <div id="display-book" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 col-9">
+                    </div>
+                    <div class="checkout-cart row-cols-1 col-md-3 mt-5">
+                        <h1>Checkout <i class="fas fa-shopping-bag"></i></h1>
+                        <hr>
+                        <div class="checkout-info">
+                            <h5 >Total Product <span class="right" id="total-product">0</span></h5>
+                            <h5 >Price <span class="right" id="price">0</span></h5>
+                            <h5 >Delivery Charge <span class="right" id="delivery-charge">0</span></h5>
+                            <hr>
+                            <h5 >Shipping Charge <span class="right" id="shipping-charge">0</span></h5>
+                            <h5 >Tax(15%) <span class="right" id="tax">0</span></h5>
+                            <hr>
+                            <h5 >Total <span class="right" id="total-price">0</span></h5>
+                        </div>
+                        <div class="check-button">
+                            <button onclick="greetings()">Place Order <i class="fas fa-cart-plus"></i></button>
+                        </div>
+                        
+                     </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="upcomming">
+            <div class="container">
+                <h2 class="text-center">Upcomming Book </h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="upcomming">
+                            <div class="product-img">
+                                <img src="img/hero-img1.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h3>Practical Web Desing </h3>
+                                <button class="btn btn-warning">Pre Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="upcomming">
+                            <div class="product-img">
+                                <img src="img/hero-img2.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h3>JavaScript The Good Part </h3>
+                                <button class="btn btn-warning">Pre Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="upcomming">
+                            <div class="product-img">
+                                <img src="img/hero-img3.jpg" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h3>Learn Node,js by building 6 Projects </h3>
+                                <button class="btn btn-warning">Pre Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="review">
+            <h2 class="text-center mb-5">What Our Customer Say</h2>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="review-section">
+                        <!-- 1 -->
+                        <div class="review">
+                            <div class="review-description">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                            </div>
+                            <div class="reviwer-info">
+                                <div class="reviwer-name">
+                                    <h3>Abdul Kader</h3>
+                                    <p>King Of Hathazari</p>
+                                </div>
+                                <div class="reviwer-img">
+                                    <img src="img/reviewer/kader.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- 2 -->
+                        <div class="review">
+                            <div class="review-description">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                            </div>
+                            <div class="reviwer-info">
+                                <div class="reviwer-name">
+                                    <h3>MD Shahin Shah</h3>
+                                    <p>Graphics Designer, IIUC IEEE CS</p>
+                                </div>
+                                <div class="reviwer-img">
+                                    <img src="img/reviewer/shahin.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- 3 -->
+                        <div class="review">
+                            <div class="review-description">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                            </div>
+                            <div class="reviwer-info">
+                                <div class="reviwer-name">
+                                    <h3>Jamil Ahmed</h3>
+                                    <p>CEO, JAMIL TECH LTD</p>
+                                </div>
+                                <div class="reviwer-img">
+                                    <img src="img/reviewer/jamil.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="review-section">
+                        <!-- 1 -->
+                        <div class="review">
+                            <div class="review-description">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                            </div>
+                            <div class="reviwer-info">
+                                <div class="reviwer-name">
+                                    <h3>Sorowar Mahabub</h3>
+                                    <p>Head Instructor, Colo Programming Shikhi</p>
+                                </div>
+                                <div class="reviwer-img">
+                                    <img src="img/reviewer/sorowar.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- 2 -->
+                        <div class="review">
+                            <div class="review-description">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                            </div>
+                            <div class="reviwer-info">
+                                <div class="reviwer-name">
+                                    <h3>Shajjad Gani Shovon</h3>
+                                    <p>Program Coordinator, IIUC IEEE CS</p>
+                                </div>
+                                <div class="reviwer-img">
+                                    <img src="img/reviewer/shovon.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- 3 -->
+                        <div class="review">
+                            <div class="review-description">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                            </div>
+                            <div class="reviwer-info">
+                                <div class="reviwer-name">
+                                    <h3>Moinul Islam </h3>
+                                    <p>Instructor, Colo Programming Shikhi</p>
+                                </div>
+                                <div class="reviwer-img">
+                                    <img src="img/reviewer/moinul.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="review-section">
+                        <!-- 1 -->
+                        <div class="review">
+                            <div class="review-description">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                            </div>
+                            <div class="reviwer-info">
+                                <div class="reviwer-name">
+                                    <h3>Arnab Barua</h3>
+                                    <p>GS, IIUC Computer Club</p>
+                                </div>
+                                <div class="reviwer-img">
+                                    <img src="img/reviewer/arnab.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- 2 -->
+                        <div class="review">
+                            <div class="review-description">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                            </div>
+                            <div class="reviwer-info">
+                                <div class="reviwer-name">
+                                    <h3>Ariful Islam</h3>
+                                    <p>Bootcamp Coordinator, IIUC CP Society</p>
+                                </div>
+                                <div class="reviwer-img">
+                                    <img src="img/reviewer/arif" alt="">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- 3 -->
+                        <div class="review">
+                            <div class="review-description">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                            </div>
+                            <div class="reviwer-info">
+                                <div class="reviwer-name">
+                                    <h3>Hossain MD Sazzad</h3>
+                                    <p>Leader of Cox's Bazar</p>
+                                </div>
+                                <div class="reviwer-img">
+                                    <img src="img/hero-img1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>     
+
+
+        <section id="blog"></section>
+        <section id="contact"></section>
+        <section id="ourService">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="service-info">
+                            <div class="info-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="info-desc">
+                                <h3>Free Delivery</h3>
+                                <p>Use Coupons to get Free Delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-info">
+                            <div class="info-icon">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <div class="info-desc">
+                                <h3>5 Days Return</h3>
+                                <p>If goods have problems</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-info">
+                            <div class="info-icon">
+                                <i class="fab fa-cc-mastercard"></i>
+                            </div>
+                            <div class="info-desc">
+                                <h3>Secure Payment</h3>
+                                <p>100% secure payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-info br">
+                            <div class="info-icon">
+                                <i class="fas fa-headphones-alt"></i>
+                            </div>
+                            <div class="info-desc">
+                                <h3>24/7 Support</h3>
+                                <p>Dedicated support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-col">
+                        <img src="img/logo-black.png" alt="logo" width="64px" class="img-fluid img-thumbnail">
+                        <p>Bookish is a book store that sells books online. We have a wide range of books from different categories. We also have a blog where we post articles about books and authors.</p>
+                        <div class="newsletter">
+                            <h4>Newsletter</h4>
+                            <p>Subscribe to our newsletter to get the latest updates on our books and blog posts.</p>
+                            <form>
+                                <input type="email" name="email" placeholder="Enter your email">
+                                <button type="submit" name="submit"><i class="fa fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-col">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-col">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="">Author</a></li>
+                            <li><a href="">Publishers</a></li>
+                            <li><a href="">List</a></li>
+                            <li><a href="">Review</a></li>
+                            <li><a href="">Categories</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="">Order Tracking</a></li>
+                            <li><a href="">Wishlish</a></li>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">My Account</a></li>
+                            <li><a href="">Terms of Service</a></li>
+                            <li><a href="">Promotional Offers</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-col">
+                        <h4>Address</h4>
+                        <p>Mirsarai, Chattogram</p>
+                        <p>Phone: +880 1816-848940</p>
+                        <p>Email: <a href="mailto:emdadulislam162@gmail.com">emdadulislam162@gmail.com</a>
+                        </p>
+
+                        <div class="follow-us-link">
+                            <ul>
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="accept-card">
+            <h6>We Accept Payment Via </h6>
+                <i class="fas fa-money-check-alt"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-paypal"></i>
+                <i class="far fa-credit-card"></i>
+           </div>
+           <hr>
+            <div class="copy-right text-center">
+                <p>Copyright© 2022 BOOKISH. All Rights Reserved.</p>
+                <p>Developed By: <a href="https://mdadul.github.io/" target="_blank">Emdadul Islam</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
