@@ -39,4 +39,8 @@ Youtube Channel: [Emdadul Islam](https://www.youtube.com/channel/UCnXqlpCPxtWNS0
    2. Add to Cart
    3. Cart Product Count
    4. Product Price calculation
+## Learning Outcome
+   1. JS DOM manipulation
+   2. Fetch API
    
+API [LINK](https://api.itbook.store/#api-books)
