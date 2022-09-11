@@ -10,7 +10,7 @@ Bookish is a book store that sells books online.
 
 - [How to run](#how-to-run)
 - [Contact](#contact)
-
+- [Features](#features)
 <!-- HOW TO RUN -->
 
 ## How to run
@@ -33,3 +33,10 @@ Project Link: [https://github.com/mdadul/Bookish](https://github.com/mdadul/Book
 
 Youtube Channel: [Emdadul Islam](https://www.youtube.com/channel/UCnXqlpCPxtWNS00LaAv4lAQ)
 
+
+## Features
+   1. Responsive Web Page
+   2. Add to Cart
+   3. Cart Product Count
+   4. Product Price calculation
+   
