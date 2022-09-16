@@ -1,46 +1,51 @@
-# Bookish
-Bookish is a book store that sells books online.
+
+# BOOKISH
+
+Bookish is a book store that sells books online. We have a wide range of books from different categories. We also have a blog where we post articles about books and authors.
 
 <img src="https://github.com/mdadul/Bookish/blob/master/img/logo-no-background.png" width="400px">
 
 
-<!-- TABLE OF CONTENTS -->
+## Author
 
-## Table of Contents
+- [EMDADUL ISLAM](https://github.com/mdadul/)
 
-- [How to run](#how-to-run)
-- [Contact](#contact)
-- [Features](#features)
-<!-- HOW TO RUN -->
 
-## How to run
+## Run Locally
 
 Please follow the below instructions to run this project in your machine:
 
 1. Clone this repository
-   ```sh
+   ```bash
    git clone https://github.com/mdadul/Bookish.git
    ```
 2. Open index.html file with VS Code live server plugin.
 
-<!-- CONTACT -->
-
-## Contact
-
-Emdadul Islam - [emdadulislam162@gmail.com](mailto:emdadulislam162@gmail.com)
-
-Project Link: [https://github.com/mdadul/Bookish](https://github.com/mdadul/Bookish)
-
-Youtube Channel: [Emdadul Islam](https://www.youtube.com/channel/UCnXqlpCPxtWNS00LaAv4lAQ)
-
 
 ## Features
-   1. Responsive Web Page
-   2. Add to Cart
-   3. Cart Product Count
-   4. Product Price calculation
-## Learning Outcome
-   1. JS DOM manipulation
-   2. Fetch API
-   
-API [LINK](https://api.itbook.store/#api-books)
+
+- Responsive Web Page
+- Add to Cart
+- Cart Product Count
+- Product Price calculation
+
+## Lessons Learned
+
+I learned while building this project JS DOM manipulation & Fetch API
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mdadul.github.io/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emdadulislam/)
+
+
+## Tech Stack
+
+**Client:** HTML, CSS, Js, DOM, API
+
+
+## 🛠 Skills
+Javascript, HTML, CSS...
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at emdadulislam162@gmail.com
