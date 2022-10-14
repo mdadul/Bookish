@@ -1,35 +1,51 @@
-# Bookish
-Bookish is a book store that sells books online.
+
+# BOOKISH
+
+Bookish is a book store that sells books online. We have a wide range of books from different categories. We also have a blog where we post articles about books and authors.
 
 <img src="https://github.com/mdadul/Bookish/blob/master/img/logo-no-background.png" width="400px">
 
 
-<!-- TABLE OF CONTENTS -->
+## Author
 
-## Table of Contents
+- [EMDADUL ISLAM](https://github.com/mdadul/)
 
-- [How to run](#how-to-run)
-- [Contact](#contact)
 
-<!-- HOW TO RUN -->
-
-## How to run
+## Run Locally
 
 Please follow the below instructions to run this project in your machine:
 
 1. Clone this repository
-   ```sh
+   ```bash
    git clone https://github.com/mdadul/Bookish.git
    ```
 2. Open index.html file with VS Code live server plugin.
 
-<!-- CONTACT -->
 
-## Contact
+## Features
 
-Emdadul Islam - [emdadulislam162@gmail.com](mailto:emdadulislam162@gmail.com)
+- Responsive Web Page
+- Add to Cart
+- Cart Product Count
+- Product Price calculation
 
-Project Link: [https://github.com/mdadul/Bookish](https://github.com/mdadul/Bookish)
+## Lessons Learned
 
-Youtube Channel: [Emdadul Islam](https://www.youtube.com/channel/UCnXqlpCPxtWNS00LaAv4lAQ)
+I learned while building this project JS DOM manipulation & Fetch API
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mdadul.github.io/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emdadulislam/)
 
+
+## Tech Stack
+
+**Client:** HTML, CSS, Js, DOM, API
+
+
+## 🛠 Skills
+Javascript, HTML, CSS...
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at emdadulislam162@gmail.com
