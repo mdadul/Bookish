@@ -6,7 +6,7 @@ const fetchBook=()=>{
 const showBook=(data)=>{
     // console.log(data);
     const bookContainer=document.getElementById('display-book');
-    for (let i = 0; i < 6; i++) {
+    for (let i = 7; i <=12; i++) {
         const book = data.books[i];
         console.log(book);
         const div=document.createElement('div');
@@ -14,8 +14,8 @@ const showBook=(data)=>{
         const price = book.price.slice(1);
         console.log(price);
         div.innerHTML=`
-        <div class="cards">
-            <img src="${book.image}" class="card-img-top" alt="..." width="50px" height="350px">
+        <div class="cards p-3">
+            <img src="${book.image}" class="img-thumbnail" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${book.title}</h5>
                 <div class="card-info">
@@ -34,10 +34,8 @@ fetchBook();
 
 let count=0;
 const countBook=(price)=>{
-   console.log(price);
    count++;
-   const cart=document.getElementById('total-product');
-   cart.innerText=count;
+   const cart=document.getElementById('total-product').innerText = count;
    updatePrice(price);
    total();
 }
@@ -50,56 +48,38 @@ const updatePrice=(price)=>{
 
 }
 const deliveryCharge=(price)=>{
+    let charge =0;
     if(price<500){
-        document.getElementById('delivery-charge').innerText=0;
+       charge = 0;
     }
     else if(price>=500 && price<800){
-        document.getElementById('delivery-charge').innerText=100;
+        charge = 100;
     }
     else if(price>=800 && price<1000){
-        document.getElementById('delivery-charge').innerText=150;
+        charge = 150;
     } else{
-        document.getElementById('delivery-charge').innerText=200;
+        charge = 200;
     }
-    shippingCharge(price);
+    document.getElementById('delivery-charge').innerText=charge;
+    document.getElementById('shipping-charge').innerText=charge;
+    subtotal = price+charge+charge;
+    document.getElementById('subtotal').innerText=subtotal.toFixed(2);
+   tax(subtotal);
 }
-
-const shippingCharge=(price)=>{
-    if(price<500){
-        document.getElementById('shipping-charge').innerText=0;
-    }
-    else if(price>=500 && price<800){
-        document.getElementById('shipping-charge').innerText=100;
-    }
-    else if(price>=800 && price<1000){
-        document.getElementById('shipping-charge').innerText=150;
-    } else{
-        document.getElementById('shipping-charge').innerText=200;
-    }
-
-    tax();
-}
-const tax=()=>{
-    const price = parseFloat(document.getElementById('price').innerText);
-    // const delivery = parseFloat(document.getElementById('delivery-charge').innerText);
-    // const shipping = parseFloat(document.getElementById('shipping-charge').innerText);
-    const tax = price*0.15;
+const tax=(subtotal)=>{
+    const tax = subtotal*0.15;
     document.getElementById('tax').innerText=tax.toFixed(2);
+    subtotal+=tax;
+    total(subtotal);
 }
-const total=()=>{
-    const price = parseFloat(document.getElementById('price').innerText);
-    const delivery = parseFloat(document.getElementById('delivery-charge').innerText);
-    const shipping = parseFloat(document.getElementById('shipping-charge').innerText);
-    const tax = parseFloat(document.getElementById('tax').innerText);
-    const total = price+delivery+shipping+tax;
+const total=(total)=>{
     document.getElementById('total-price').innerText=total.toFixed(2);
-
 }
 
 const greetings=()=>{
     const totalPrice = parseFloat(document.getElementById('total-price').innerText);
     if(totalPrice==0){
-        swal("Please add some books to cart", "", "error");
+        swal("Please add some books at cart", "", "error");
     }
     else{
         swal("Thank you for buying","Your total price is: "+totalPrice, "success");
@@ -108,6 +88,7 @@ const greetings=()=>{
         document.getElementById('price').innerText=0;
         document.getElementById('delivery-charge').innerText=0;
         document.getElementById('shipping-charge').innerText=0;
+        document.getElementById('subtotal').innerText=0;
         document.getElementById('tax').innerText=0;
         document.getElementById('total-price').innerText=0;
         

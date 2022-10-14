@@ -18,41 +18,26 @@
         <div class="container">
         <nav>
                 <div class="logo">
-                    <img src="img/logo.png" alt="bookish-logo" width="64px" class="img-thumbnail">
+                    <a href="#"><img src="img/logo-no-background.png" alt="bookish-logo" width="64px" class="img-fluid img-thumbnail"></a>
                 </div>
-                <div class="nav-item d-lg-block d-none">
+                <div class="nav-item">
                     <a href="#">Home</a>
                     <a href="#product">Product</a>
                     <a href="#review">Review</a>
                     <a href="#blog">Blog</a>
                     <a href="#contact">Contact</a>
                 </div>   
-                <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="fas fa-grip-lines"></i></button>
-
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body small" id="menu">
-                    <a href="#">Home</a>
-                    <a href="#product">Product</a>
-                    <a href="#review">Review</a>
-                    <a href="#blog">Blog</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                </div>  
         </nav>
     </div>
     </header>
     <main>
         <section id="home">
             <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
-                <div class="carousel-indicators">
+                <!-- <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+                </div> -->
 
                 <div class="carousel-inner slide1">
                   <div class="carousel-item active">
@@ -118,32 +103,35 @@
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                  <!-- <span class="visually-hidden">Previous</span> -->
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                  <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                  <!-- <span class="visually-hidden">Next</span> -->
                 </button>
               </div>
         </section>
 
         <!-- Product Section -->
         <section id="product">
-            <h1 class="text-center">New BOOK</span></h1>
-            <div class="container">
+            <h1>New BOOK</span></h1>
+            <div class="container-fluid px-5">
                 <div class="row">
                     <div id="display-book" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 col-9">
                     </div>
                     <div class="checkout-cart row-cols-1 col-md-3 mt-5">
-                        <h1>Checkout <i class="fas fa-shopping-bag"></i></h1>
+                        <h2>Checkout <i class="fas fa-shopping-bag"></i></h2>
                         <hr>
                         <div class="checkout-info">
                             <h5 >Total Product <span class="right" id="total-product">0</span></h5>
                             <h5 >Price <span class="right" id="price">0</span></h5>
-                            <h5 >Delivery Charge <span class="right" id="delivery-charge">0</span></h5>
                             <hr>
+                            <h5 >Delivery Charge <span class="right" id="delivery-charge">0</span></h5>
                             <h5 >Shipping Charge <span class="right" id="shipping-charge">0</span></h5>
+                            <hr>
+                            <h5>Sub Total<span class="right" id="subtotal">0</span></h5>
+                            <hr>
                             <h5 >Tax(15%) <span class="right" id="tax">0</span></h5>
                             <hr>
                             <h5 >Total <span class="right" id="total-price">0</span></h5>
@@ -157,40 +145,41 @@
                 
             </div>
         </section>
+        <!-- Upcomming Product -->
         <section id="upcomming">
             <div class="container">
-                <h2 class="text-center">Upcomming Book </h2>
+                <h2>Upcomming Book </h2>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="upcomming">
                             <div class="product-img">
-                                <img src="img/hero-img1.jpg" alt="">
+                                <img src="img/hero-img1.jpg" alt="" class="img-thumbnail">
                             </div>
                             <div class="product-info">
                                 <h3>Practical Web Desing </h3>
-                                <button class="btn btn-warning">Pre Order</button>
+                                <button >Pre Order</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="upcomming">
                             <div class="product-img">
-                                <img src="img/hero-img2.jpg" alt="">
+                                <img src="img/hero-img2.jpg" alt="" class="img-thumbnail">
                             </div>
                             <div class="product-info">
                                 <h3>JavaScript The Good Part </h3>
-                                <button class="btn btn-warning">Pre Order</button>
+                                <button>Pre Order</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="upcomming">
                             <div class="product-img">
-                                <img src="img/hero-img3.jpg" alt="">
+                                <img src="img/hero-img3.jpg" alt="" class="img-thumbnail">
                             </div>
                             <div class="product-info">
-                                <h3>Learn Node,js by building 6 Projects </h3>
-                                <button class="btn btn-warning">Pre Order</button>
+                                <h3>Learn Node JS </h3>
+                                <button>Pre Order</button>
                             </div>
                         </div>
                     </div>
@@ -198,8 +187,9 @@
             </div>
         </section>
 
+        <!-- Review Section -->
         <section id="review">
-            <h2 class="text-center mb-5">What Our Customer Say</h2>
+            <h1>What Our Customer Say</h1>
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
@@ -208,7 +198,9 @@
                         <div class="review">
                             <div class="review-description">
                                     <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                                    <p>Selecting a good book store can be tricky—especially if you’re new to the city. But don’t worry, 
+                                        I'm here to help! BOOKISH is one of the oldest and most well-known bookstores in IIUC. 
+                                        It’s a great place to start if you’re looking for a wide selection of books.</p>
                             </div>
                             <div class="reviwer-info">
                                 <div class="reviwer-name">
@@ -225,7 +217,9 @@
                         <div class="review">
                             <div class="review-description">
                                     <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                                    <p> When I was younger, my mom would take me to the local book store. I would browse through
+                                        the aisles, picking up anything that caught my eye. As I got older, I discovered online bookstores 
+                                        and now I buy most of my books from BOOKISH.p>
                             </div>
                             <div class="reviwer-info">
                                 <div class="reviwer-name">
@@ -242,7 +236,9 @@
                         <div class="review">
                             <div class="review-description">
                                     <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                                    <p>The BOOKISH Bookshop is a great place to buy a book! The staff is friendly and helpful and they have 
+                                        a great selection of books. I highly recommend this bookshop if you're looking for a good place
+                                         to buy a book!</p>
                             </div>
                             <div class="reviwer-info">
                                 <div class="reviwer-name">
@@ -262,7 +258,7 @@
                         <div class="review">
                             <div class="review-description">
                                     <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                                    <p>Alhamdulillah satisfied with the books & delivery was so fast. Owners behaviours also good & help.I give 5★ rating after using the service  & highly recommended to you guys.</p>
                             </div>
                             <div class="reviwer-info">
                                 <div class="reviwer-name">
@@ -279,7 +275,7 @@
                         <div class="review">
                             <div class="review-description">
                                     <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                                    <p>Alhamdulillah satisfied with the books & delivery was so fast. Owners behaviours also good & help.I give 5★ rating after using the service  & highly recommended to you guys.</p>
                             </div>
                             <div class="reviwer-info">
                                 <div class="reviwer-name">
@@ -296,7 +292,7 @@
                         <div class="review">
                             <div class="review-description">
                                     <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                                    <p>Alhamdulillah satisfied with the books & delivery was so fast. Owners behaviours also good & help.I give 5★ rating after using the service  & highly recommended to you guys.</p>
                             </div>
                             <div class="reviwer-info">
                                 <div class="reviwer-name">
@@ -316,7 +312,7 @@
                         <div class="review">
                             <div class="review-description">
                                     <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                                    <p>Alhamdulillah satisfied with the books & delivery was so fast. Owners behaviours also good & help.I give 5★ rating after using the service  & highly recommended to you guys.</p>
                             </div>
                             <div class="reviwer-info">
                                 <div class="reviwer-name">
@@ -333,15 +329,15 @@
                         <div class="review">
                             <div class="review-description">
                                     <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                                    <p>Alhamdulillah satisfied with the books & delivery was so fast. Owners behaviours also good & help.I give 5★ rating after using the service  & highly recommended to you guys.</p>
                             </div>
                             <div class="reviwer-info">
                                 <div class="reviwer-name">
-                                    <h3>Ariful Islam</h3>
-                                    <p>Bootcamp Coordinator, IIUC CP Society</p>
+                                    <h3>Arafat Iqbal    </h3>
+                                    <p>CR,CSE50, IIUC</p>
                                 </div>
                                 <div class="reviwer-img">
-                                    <img src="img/reviewer/arif" alt="">
+                                    <img src="img/reviewer/arafat.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -350,7 +346,7 @@
                         <div class="review">
                             <div class="review-description">
                                     <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero deserunt qui ipsam dolor possimus, soluta exercitationem. Sed aspernatur perferendis, sapiente distinctio aperiam voluptatem sunt tempore dolor aliquid quas? Quidem officia voluptatem, amet delectus odit, totam quaerat molestiae recusandae pariatur quam ut excepturi? Distinctio rerum illo pariatur dignissimos, cum harum vero.</p>
+                                    <p>Alhamdulillah satisfied with the books & delivery was so fast. Owners behaviours also good & help.I give 5★ rating after using the service  & highly recommended to you guys.</p>
                             </div>
                             <div class="reviwer-info">
                                 <div class="reviwer-name">
@@ -366,60 +362,100 @@
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span> -->
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                  <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span> -->
                 </button>
               </div>
         </section>     
 
-
+        <!-- Blog Section -->
         <section id="blog">
             <div class="container mb-5">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="blog">
                             <div class="blog-img">
-                                <img src="img/logo-black.png" alt="" width="200px">
+                                <img src="img/blog1.png" alt="" class="img-thumbnail">
                             </div>
                             <div class="blog-description">
                                 <h3>The Ultimate Guide to Bookstagram for Beginners </h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-                                <a href="#">Read More</a>
+                                <div class="blog-author">
+                                    <p><i class="far fa-user"></i>  Emdadul Islam</p>
+                                    <p><i class="fas fa-hourglass-half"></i>  7 miniute ago</p>
+                                </div>
+                                <p>The Ultimate Guide to Bookstagram for Beginners, The Ultimate Guide to Bookstagram for Beginners...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="blog">
                             <div class="blog-img">
-                                <img src="img/logo-black.png" alt="" width="200px">
+                                <img src="img/blog2.png" alt="" class="img-thumbnail">
                             </div>
                             <div class="blog-description">
+                               
                                 <h3>13 Best Brighton Bookshops to Visit </h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-                                <a href="#">Read More</a>
+                                <div class="blog-author">
+                                    <p><i class="far fa-user"></i>  Arafat Iqbal</p>
+                                    <p><i class="fas fa-hourglass-half"></i> 1 Months Ago </p>
+                                </div>
+                                <p>13 Best Brighton Bookshops to Visit.13 Best Brighton Bookshops to Visit 13 Best Brighton Bookshops to Visit  ...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="blog">
                             <div class="blog-img">
-                                <img src="img/logo-black.png" alt="" width="200px">
+                                <img src="img/blog3.png" alt="" class="img-thumbnail">
                             </div>
                             <div class="blog-description">
+                               
                                 <h3>14 Specialist Bookshops in CTG You Need to Visit</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-                                <a href="#">Read More</a>
+                                <div class="blog-author">
+                                    <p><i class="far fa-user"></i>  Admin</p>
+                                    <p><i class="fas fa-hourglass-half"></i>  1 Hour Ago</p>
+                                </div>
+                                <p>14 Specialist Bookshops in CTG You Need to Visit,14 Specialist Bookshops in CTG You Need to Visit...</p>
+                               
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact"></section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+           <div class="container">
+            <h1 class="title">Let's Get in Touch</h1>
+            <div class="row">
+                <div class="col-md-6 contact-info">
+                    <img src="img/contact.gif" alt="contact">
+                </div>
+                <div class="col-md-6 ">
+                    <div class="contact-form">
+                        <form action="">
+                            <div class="form-grp name">
+                                <input type="text" name="" id="" placeholder="First Name" class="w50">
+                                <input type="text" name="" id="" placeholder="Last Name" class="w50">
+                            </div>
+                            <div class="form-grp email">
+                                <input type="email" name=""  placeholder="Enter Your Email">
+                            </div>
+                            <div class="from-grp">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here....."></textarea>
+                            </div>
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                </div>
+                   
+           </div>
+        </section>
         <section id="ourService">
             <div class="container">
                 <div class="row">
@@ -474,7 +510,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 ">
                     <div class="footer-col">
                         <img src="img/logo-black.png" alt="logo" width="64px" class="img-fluid img-thumbnail">
                         <p>Bookish is a book store that sells books online. We have a wide range of books from different categories. We also have a blog where we post articles about books and authors.</p>
@@ -549,11 +585,13 @@
             </div>
            <div class="accept-card">
             <h6>We Accept Payment Via </h6>
-                <i class="fas fa-money-check-alt"></i>
-                <i class="fab fa-cc-mastercard"></i>
-                <i class="fab fa-cc-visa"></i>
-                <i class="fab fa-paypal"></i>
-                <i class="far fa-credit-card"></i>
+                <div class="card-list">
+                    <i class="fas fa-money-check-alt"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-paypal"></i>
+                    <i class="far fa-credit-card"></i>
+                </div>
            </div>
            <hr>
             <div class="copy-right text-center">
