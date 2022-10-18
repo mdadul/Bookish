@@ -4,7 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-#home,#product,#review,#blog,#contact{
+#home,#product,#review,#blog,#contact,#tracking{
   scroll-margin-top: 10vh;
 }
 /* ==========================================
@@ -167,7 +167,7 @@ header {
 =================================================*/
 .checkout-cart {
   border: 5px solid rgb(230, 6, 6);
-  height: 70vh;
+  height: 75vh;
   background-color: #fff;
   padding: 20px;
   border-radius: 15px;
@@ -416,7 +416,7 @@ header {
 ================================================== */
 #tracking{
   height: 90vh;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 #tracking h1{
   text-align: center;
@@ -424,12 +424,19 @@ header {
   font-weight: bold;
   color: rgb(97, 4, 30);
 }
-
+#tracking p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(97, 4, 30);
+}
+.tracking-form {
+  margin-top: 10vh;
+}
 .tracking-form label{
   font-size: 20px;
   font-weight: bold;
   color: rgb(152, 9, 42);
-  margin-top: 30vh;
 }
 .tracking-form .form-group{
   display: flex;
@@ -439,7 +446,7 @@ header {
 }
 .tracking-form input{
   height: 50px;
-  width: 300px;
+  width: 500px;
   padding: 10px;
   border: none;
   border-bottom: 1px solid rgb(152, 9, 42);
@@ -675,7 +682,7 @@ footer {
     font-size: 14px;
     padding: 5px;
   }
-  .slide ,.cards,#review,#blog,#contact,#upcomming{
+  .slide ,.cards,#review,#blog,#contact,#upcomming,#tracking{
     height: auto;
   }
   .upcomming{
@@ -699,20 +706,51 @@ footer {
     gap: 10px;
     margin: 30px 10px;
   }
-  .blog{
-    margin: 10px auto;
+  .cards ,.checkout-cart, .upcomming, .review,.blog{
+    margin: 10px 5px 10px 5px;
+    width: 320px;
+    height: auto;
   }
-  .cards {
-    width: 400px;
-    margin: 0px auto;
+  .upcomming{
+    height: 450px;
+  }
+  .cards{
+    width: 300px;
+    margin-left: -18px;
+  }
+
+  .upcomming h3{
+    font-size: 20px;
   }
   .accept-card {
     flex-direction: column;
+   
+  }
+  .accept-card h6{
+    margin-top: 10px;
+    width: 180px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .card-list i{
+    font-size: 12px;
   }
   footer ~ .footer-col {
     text-align: center;
   }
   .copy-right{
     flex-direction: column;
+    font-size: 12px;
+  }
+  #tracking{
+    margin: 10px 5px 10px 5px;
+    width: 320px;
+    height: auto;
+  }
+  #tracking img{
+    margin-left: 50px;
+  }
+  .tracking-form input{
+    width: 200px;
   }
 }

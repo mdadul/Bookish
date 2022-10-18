@@ -82,7 +82,7 @@ const greetings=()=>{
         swal("Please add some books at cart", "", "error");
     }
     else{
-        swal("Thank you for buying","Your total price is: "+totalPrice, "success");
+        swal("Thanks for your Order","Your total price is: "+totalPrice, "success");
         count=0;
         document.getElementById('total-product').innerText=count;
         document.getElementById('price').innerText=0;
